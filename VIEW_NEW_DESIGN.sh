@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "========================================="
+echo "VISHVAVIRAT SECURITY - View New Design"
+echo "========================================="
+echo ""
+echo "Starting local server..."
+echo ""
+echo "🌐 Open your browser and visit:"
+echo ""
+echo "   NEW DESIGN (matching American Guard):"
+echo "   👉 http://localhost:8000/index-new.html"
+echo ""
+echo "   ORIGINAL DESIGN:"
+echo "   👉 http://localhost:8000/index.html"
+echo ""
+echo "⚠️  NOTE: Images will show as broken until you add them"
+echo "    See IMAGE_GUIDE.md for instructions"
+echo ""
+echo "⏹️  Press Ctrl+C to stop the server"
+echo ""
+echo "========================================="
+echo ""
+
+python3 -m http.server 8000
