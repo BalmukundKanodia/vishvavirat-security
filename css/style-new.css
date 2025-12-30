@@ -207,7 +207,20 @@ button {
     letter-spacing: 2px;
 }
 
-.logo span {
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-text span {
     color: var(--accent-gold);
 }
 
@@ -796,6 +809,18 @@ button {
    RESPONSIVE DESIGN - MOBILE
    ============================================ */
 @media (max-width: 768px) {
+    .logo-img {
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo a {
+        gap: 0.75rem;
+    }
+
     .mobile-menu-toggle {
         display: flex;
     }
