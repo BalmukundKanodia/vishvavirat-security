@@ -1,13 +1,15 @@
 -- ============================================
 -- VISHVAVIRAT SECURITY Database Schema
 -- ============================================
-
--- Create database (if not exists)
-CREATE DATABASE IF NOT EXISTS vishvavirat_leads
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-
-USE vishvavirat_leads;
+--
+-- IMPORTANT: Before importing this file:
+-- 1. Create database in Hostinger (e.g., u876271999_vv_leads)
+-- 2. Open phpMyAdmin
+-- 3. SELECT your database from the left sidebar
+-- 4. THEN import this file
+--
+-- This file will create the tables in the selected database
+-- ============================================
 
 -- Contact Submissions Table
 CREATE TABLE IF NOT EXISTS contact_submissions (
