@@ -159,6 +159,9 @@ function connectDatabase() {
         throw new Exception('Database connection failed');
     }
 
+    // Set MySQL timezone to match PHP timezone (Asia/Kolkata = UTC+5:30)
+    $db->query("SET time_zone = '+05:30'");
+
     $db->set_charset('utf8mb4');
     return $db;
 }

@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_status'])) {
     
     try {
         $db = new mysqli($db_host, $db_user, $db_pass, $db_name);
+        $db->query("SET time_zone = '+05:30'");  // Set MySQL timezone to IST
         $stmt = $db->prepare("UPDATE contact_submissions SET status = ?, notes = ? WHERE id = ?");
         $stmt->bind_param("ssi", $status, $notes, $id);
         $stmt->execute();
@@ -66,6 +67,7 @@ $offset = ($page - 1) * $per_page;
 
 // Connect to database
 $db = new mysqli($db_host, $db_user, $db_pass, $db_name);
+$db->query("SET time_zone = '+05:30'");  // Set MySQL timezone to IST
 $db->set_charset('utf8mb4');
 
 // Build query
