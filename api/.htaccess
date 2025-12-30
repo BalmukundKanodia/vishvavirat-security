@@ -1,0 +1,14 @@
+# Prevent direct access to config and sensitive files
+<FilesMatch "^(config\.php|config\.sample\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Allow only contact.php to be accessed directly
+<FilesMatch "^(?!contact\.php$).*\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
