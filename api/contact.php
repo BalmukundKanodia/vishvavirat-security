@@ -297,9 +297,10 @@ Submitted: " . date('d M Y, h:i A') . "
     ";
 
     // Email headers
+    $from_email = defined('FROM_EMAIL') ? FROM_EMAIL : 'noreply@viratsecurity.com';
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    $headers .= "From: {$site_name} <noreply@vishvaviratsecurity.com>\r\n";
+    $headers .= "From: {$site_name} <{$from_email}>\r\n";
     $headers .= "Reply-To: {$data['email']}\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
