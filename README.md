@@ -23,7 +23,8 @@ This website provides a professional online presence for VISHVAVIRAT SECURITY & 
 ## 🚀 Features
 
 ### Frontend
-- ✅ Modern, professional design with institutional credibility
+- ✅ **NEW**: Modern dark design with hero image slider and manual navigation
+- ✅ World-class copywriting on all 6 service detail pages
 - ✅ Fully responsive (mobile, tablet, desktop)
 - ✅ Fast loading with optimized assets
 - ✅ Accessible (WCAG compliant)
@@ -56,7 +57,8 @@ This website provides a professional online presence for VISHVAVIRAT SECURITY & 
 ```
 vishvavirat-security/
 │
-├── index.html                    # Homepage
+├── index.html                    # Homepage (NEW modern dark design)
+├── index-old.html                # Previous homepage (preserved for reference)
 ├── about.html                    # About Us page
 ├── services.html                 # Services overview page
 ├── industries.html               # Industries We Serve page
@@ -64,10 +66,12 @@ vishvavirat-security/
 ├── contact.html                  # Contact page
 │
 ├── css/
-│   └── style.css                 # Main stylesheet (production-ready)
+│   ├── style-new.css             # Main stylesheet (NEW modern dark design)
+│   └── style.css                 # Previous stylesheet
 │
 ├── js/
-│   └── main.js                   # Main JavaScript (features & security)
+│   ├── main-new.js               # Main JavaScript (NEW design with slider)
+│   └── main.js                   # Previous JavaScript
 │
 ├── images/                       # All image assets
 │   └── (your images here)
